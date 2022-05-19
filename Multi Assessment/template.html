@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="src/image/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,93 +14,114 @@
       src="https://kit.fontawesome.com/1e7060f51f.js"
       crossorigin="anonymous"
     ></script>
-    <script src="src/js/scripts.js"></script>
     <link rel="stylesheet" href="src/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/username11384/multimediaHTML/main/Multi%20Assessment/src/css/bootstrap.css" />
     <link rel="stylesheet" href="src/css/dark-mode.css" />
-    <link rel="stylesheet" href="src/css/switch.css" />
-    <title>Template</title>
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/username11384/multimediaHTML/main/Multi%20Assessment/src/css/dark-mode.css" />
+    <title>Multimedia Assessment - Immanuel Lam</title>
   </head>
+
   <style>
     .jbmono {
   font-family: "JetBrains Mono";
 }
   </style>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Template</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <form class="container-fluid justify-content-start">
-      <a href="index.html" style="text-decoration: none;">
-      <button class="btn btn-outline-success" type="button">Home</button>
-      
-      <a href="info.html" style="text-decoration: none;">
-      <button class="px-2 btn btn-outline-success" type="button">Info</button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="darktxt navbar-brand" href="index.html">
+        <img
+          src="src/image/icon.jpg"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt="Marin as Shizuku-tan"
+        />
+        My Dress-Up Darling
       </a>
-    </form>
-      <div class="navbar-text d-flex form-check form-switch">
-        <input type="checkbox" class="form-check-input" id="darkSwitch" />
-        <label class="custom-control-label" for="darkSwitch">Dark</label>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <form class="container-fluid justify-content-start">
+        <a href="index.html" style="text-decoration: none;">
+        <button class="btn btn-outline-primary" type="button">Home</button>
+        
+        <a href="info.html" style="text-decoration: none;">
+        <button class="px-2 btn btn-outline-primary" type="button">Info</button>
+        </a>
+      </form>
+        <div class="darktxt navbar-text d-flex form-check form-switch">
+          <input type="checkbox" class="form-check-input" id="darkSwitch" />
+          <label class="custom-control-label" for="darkSwitch">Dark</label>
       </div>
-      <script src="src/js/dark-mode-switch.min.js"></script>
+        <script src="src/js/dark-mode-switch.min.js"></script>
+        <script src="https://raw.githubusercontent.com/username11384/multimediaHTML/main/Multi%20Assessment/src/js/dark-mode-switch.min.js"></script>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
   <body>
-    <div class="px-2 text-center">
-      <br />
-      <h1>Template</h1>
-      <div class="switch-container">
-        <input type="checkbox" id="switch" />
-        <label for="switch">
-           <i class="fas fa-sun"></i>
-           <i class="fas fa-moon"></i>
-           <span class="ball"></span>
-        </label>
-     </div>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id urna at ligula dictum consequat sit amet in augue. Nullam ut gravida nisi. Nam et ullamcorper magna. Pellentesque ipsum ipsum, sollicitudin nec lobortis eu, ornare pellentesque est. Phasellus varius rhoncus libero, consequat mollis mauris ultricies sodales. Donec et augue ut felis luctus lacinia. Donec egestas tellus sed nisl consequat rutrum. Proin at pharetra libero. Sed vel libero vitae augue egestas viverra. Nulla quam sapien, finibus in pulvinar at, suscipit eget sem. Mauris vel ipsum in ex efficitur tempor sed vel turpis.
+    <header>
+      <div class="overlay"></div>
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="src/vid/info_cg.mp4" type="video/mp4">
+      </video>
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white">
+            <h1 class="display-5 fw-bold lh-1 mb-3">More Information</h1>
+            <p class="lead mb-0">You can find out more about <b>My Dress-Up Darling</b> here.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="divider"></div>
+  <section class="showcase">
+      <div class="container-fluid p-0">
+          <div class="row g-0">
+              <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('src/image/characters.png')"></div>
+              <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                  <h2>Characters</h2>
+                  <p class="lead mb-0">There are 2 main characters in this story, both of which are Marin Kitagawa and Gojo Wakana.</p><br />
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="characters.html">
+                      <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Characters <i class="fa-solid fa-arrow-right"></i></button>
+                      </a>
+                    </div>
+              </div>
+          </div>
+          <div class="row g-0">
+              <div class="col-lg-6 text-white showcase-img" style="background-image: url('src/image/plot.jpg')"></div>
+              <div class="col-lg-6 my-auto showcase-text">
+                  <h2>Plot</h2>
+                  <p class="lead mb-0">Check out the plot of <b>My Dress-Up Darling</b> here! Warning, there may be potential spoilers</p><br />
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="info.html">
+                      <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Plot <i class="fa-solid fa-arrow-right"></i></button>
+                      </a>
+                    </div>
+              </div>
+          </div>
+          <div class="row g-0">
+              <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('src/image/more.jpg')"></div>
+              <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                  <h2>Other Info</h2>
+                  <p class="lead mb-0">If you want to find out more about the series, such as the director, animators and more, click here!</p><br />
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="extras.html">
+                      <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Other Info <i class="fa-solid fa-arrow-right"></i></button>
+                      </a>
+                    </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
-  Donec ornare id risus tristique vulputate. Curabitur sit amet nibh sed eros ornare vestibulum at ac eros. Proin eu ullamcorper neque. Aliquam venenatis lorem orci, id fringilla massa dictum sollicitudin. Mauris id viverra lacus. Etiam et eleifend magna, ut tincidunt elit. Ut dictum lorem neque, vel rhoncus urna viverra vitae. Mauris quam enim, scelerisque aliquet convallis non, interdum eu eros. Sed pellentesque eros eu purus tincidunt facilisis. Nam semper in ante pellentesque tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum mattis feugiat sapien sed finibus.
-  
-  Nam sed tempus lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec quam justo, volutpat eu lectus nec, commodo placerat eros. Sed at tincidunt ligula. Donec tempor vel elit nec sagittis. Vestibulum scelerisque efficitur interdum. Donec sollicitudin tincidunt metus, ac consectetur sapien lobortis a. Maecenas accumsan magna odio, vitae egestas massa convallis quis. Nam pellentesque interdum ante sed bibendum. Pellentesque quis interdum dui. Pellentesque aliquam placerat mauris in posuere.
-  
-  Nulla non sollicitudin velit. Donec Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id urna at ligula dictum consequat sit amet in augue. Nullam ut gravida nisi. Nam et ullamcorper magna. Pellentesque ipsum ipsum, sollicitudin nec lobortis eu, ornare pellentesque est. Phasellus varius rhoncus libero, consequat mollis mauris ultricies sodales. Donec et augue ut felis luctus lacinia. Donec egestas tellus sed nisl consequat rutrum. Proin at pharetra libero. Sed vel libero vitae augue egestas viverra. Nulla quam sapien, finibus in pulvinar at, suscipit eget sem. Mauris vel ipsum in ex efficitur tempor sed vel turpis.
+<br />
 
-  Donec ornare id risus tristique vulputate. Curabitur sit amet nibh sed eros ornare vestibulum at ac eros. Proin eu ullamcorper neque. Aliquam venenatis lorem orci, id fringilla massa dictum sollicitudin. Mauris id viverra lacus. Etiam et eleifend magna, ut tincidunt elit. Ut dictum lorem neque, vel rhoncus urna viverra vitae. Mauris quam enim, scelerisque aliquet convallis non, interdum eu eros. Sed pellentesque eros eu purus tincidunt facilisis. Nam semper in ante pellentesque tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum mattis feugiat sapien sed finibus.
-  
-  Nam sed tempus lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec quam justo, volutpat eu lectus nec, commodo placerat eros. Sed at tincidunt ligula. Donec tempor vel elit nec sagittis. Vestibulum scelerisque efficitur interdum. Donec sollicitudin tincidunt metus, ac consectetur sapien lobortis a. Maecenas accumsan magna odio, vitae egestas massa convallis quis. Nam pellentesque interdum ante sed bibendum. Pellentesque quis interdum dui. Pellentesque aliquam placerat mauris in posuere.
-  
-  Nulla non sollicitudin velit. Donec Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id urna at ligula dictum consequat sit amet in augue. Nullam ut gravida nisi. Nam et ullamcorper magna. Pellentesque ipsum ipsum, sollicitudin nec lobortis eu, ornare pellentesque est. Phasellus varius rhoncus libero, consequat mollis mauris ultricies sodales. Donec et augue ut felis luctus lacinia. Donec egestas tellus sed nisl consequat rutrum. Proin at pharetra libero. Sed vel libero vitae augue egestas viverra. Nulla quam sapien, finibus in pulvinar at, suscipit eget sem. Mauris vel ipsum in ex efficitur tempor sed vel turpis.
-
-  Donec ornare id risus tristique vulputate. Curabitur sit amet nibh sed eros ornare vestibulum at ac eros. Proin eu ullamcorper neque. Aliquam venenatis lorem orci, id fringilla massa dictum sollicitudin. Mauris id viverra lacus. Etiam et eleifend magna, ut tincidunt elit. Ut dictum lorem neque, vel rhoncus urna viverra vitae. Mauris quam enim, scelerisque aliquet convallis non, interdum eu eros. Sed pellentesque eros eu purus tincidunt facilisis. Nam semper in ante pellentesque tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum mattis feugiat sapien sed finibus.
-  
-  Nam sed tempus lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec quam justo, volutpat eu lectus nec, commodo placerat eros. Sed at tincidunt ligula. Donec tempor vel elit nec sagittis. Vestibulum scelerisque efficitur interdum. Donec sollicitudin tincidunt metus, ac consectetur sapien lobortis a. Maecenas accumsan magna odio, vitae egestas massa convallis quis. Nam pellentesque interdum ante sed bibendum. Pellentesque quis interdum dui. Pellentesque aliquam placerat mauris in posuere.
-  
-  Nulla non sollicitudin velit. Donec Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id urna at ligula dictum consequat sit amet in augue. Nullam ut gravida nisi. Nam et ullamcorper magna. Pellentesque ipsum ipsum, sollicitudin nec lobortis eu, ornare pellentesque est. Phasellus varius rhoncus libero, consequat mollis mauris ultricies sodales. Donec et augue ut felis luctus lacinia. Donec egestas tellus sed nisl consequat rutrum. Proin at pharetra libero. Sed vel libero vitae augue egestas viverra. Nulla quam sapien, finibus in pulvinar at, suscipit eget sem. Mauris vel ipsum in ex efficitur tempor sed vel turpis.
-
-  Donec ornare id risus tristique vulputate. Curabitur sit amet nibh sed eros ornare vestibulum at ac eros. Proin eu ullamcorper neque. Aliquam venenatis lorem orci, id fringilla massa dictum sollicitudin. Mauris id viverra lacus. Etiam et eleifend magna, ut tincidunt elit. Ut dictum lorem neque, vel rhoncus urna viverra vitae. Mauris quam enim, scelerisque aliquet convallis non, interdum eu eros. Sed pellentesque eros eu purus tincidunt facilisis. Nam semper in ante pellentesque tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum mattis feugiat sapien sed finibus.
-  
-  Nam sed tempus lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec quam justo, volutpat eu lectus nec, commodo placerat eros. Sed at tincidunt ligula. Donec tempor vel elit nec sagittis. Vestibulum scelerisque efficitur interdum. Donec sollicitudin tincidunt metus, ac consectetur sapien lobortis a. Maecenas accumsan magna odio, vitae egestas massa convallis quis. Nam pellentesque interdum ante sed bibendum. Pellentesque quis interdum dui. Pellentesque aliquam placerat mauris in posuere.
-  
-  Nulla non sollicitudin velit. Donec Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id urna at ligula dictum consequat sit amet in augue. Nullam ut gravida nisi. Nam et ullamcorper magna. Pellentesque ipsum ipsum, sollicitudin nec lobortis eu, ornare pellentesque est. Phasellus varius rhoncus libero, consequat mollis mauris ultricies sodales. Donec et augue ut felis luctus lacinia. Donec egestas tellus sed nisl consequat rutrum. Proin at pharetra libero. Sed vel libero vitae augue egestas viverra. Nulla quam sapien, finibus in pulvinar at, suscipit eget sem. Mauris vel ipsum in ex efficitur tempor sed vel turpis.
-
-  Donec ornare id risus tristique vulputate. Curabitur sit amet nibh sed eros ornare vestibulum at ac eros. Proin eu ullamcorper neque. Aliquam venenatis lorem orci, id fringilla massa dictum sollicitudin. Mauris id viverra lacus. Etiam et eleifend magna, ut tincidunt elit. Ut dictum lorem neque, vel rhoncus urna viverra vitae. Mauris quam enim, scelerisque aliquet convallis non, interdum eu eros. Sed pellentesque eros eu purus tincidunt facilisis. Nam semper in ante pellentesque tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum mattis feugiat sapien sed finibus.
-  
-  Nam sed tempus lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec quam justo, volutpat eu lectus nec, commodo placerat eros. Sed at tincidunt ligula. Donec tempor vel elit nec sagittis. Vestibulum scelerisque efficitur interdum. Donec sollicitudin tincidunt metus, ac consectetur sapien lobortis a. Maecenas accumsan magna odio, vitae egestas massa convallis quis. Nam pellentesque interdum ante sed bibendum. Pellentesque quis interdum dui. Pellentesque aliquam placerat mauris in posuere.
-  
-  Nulla non sollicitudin velit. Donec Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id urna at ligula dictum consequat sit amet in augue. Nullam ut gravida nisi. Nam et ullamcorper magna. Pellentesque ipsum ipsum, sollicitudin nec lobortis eu, ornare pellentesque est. Phasellus varius rhoncus libero, consequat mollis mauris ultricies sodales. Donec et augue ut felis luctus lacinia. Donec egestas tellus sed nisl consequat rutrum. Proin at pharetra libero. Sed vel libero vitae augue egestas viverra. Nulla quam sapien, finibus in pulvinar at, suscipit eget sem. Mauris vel ipsum in ex efficitur tempor sed vel turpis.
-
-  Donec ornare id risus tristique vulputate. Curabitur sit amet nibh sed eros ornare vestibulum at ac eros. Proin eu ullamcorper neque. Aliquam venenatis lorem orci, id fringilla massa dictum sollicitudin. Mauris id viverra lacus. Etiam et eleifend magna, ut tincidunt elit. Ut dictum lorem neque, vel rhoncus urna viverra vitae. Mauris quam enim, scelerisque aliquet convallis non, interdum eu eros. Sed pellentesque eros eu purus tincidunt facilisis. Nam semper in ante pellentesque tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum mattis feugiat sapien sed finibus.
-  
-  Nam sed tempus lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec quam justo, volutpat eu lectus nec, commodo placerat eros. Sed at tincidunt ligula. Donec tempor vel elit nec sagittis. Vestibulum scelerisque efficitur interdum. Donec sollicitudin tincidunt metus, ac consectetur sapien lobortis a. Maecenas accumsan magna odio, vitae egestas massa convallis quis. Nam pellentesque interdum ante sed bibendum. Pellentesque quis interdum dui. Pellentesque aliquam placerat mauris in posuere.
-  
-  Nulla non sollicitudin velit. Donec sit amet finibus dolor, ultrices ultrices justo. Vivamus tincidunt mi a hendrerit interdum. Vivamus pharetra ornare elit, vel scelerisque lectus aliquam eu. Nunc tempor ante neque, eu vehicula diam mattis vel. Pellentesque mattis tortor dui, eget egestas turpis hendrerit quis. Morbi sollicitudin orci ligula, eu sodales lacus lacinia ac. In et sapien sem. Suspendisse aliquam suscipit facilisis.</p>
-    </div>
 
     <script src="src/js/bootstrap.js"></script>
+    <script src="https://raw.githubusercontent.com/username11384/multimediaHTML/main/Multi%20Assessment/src/js/bootstrap.js"></script>
   </body>
 
   <footer class="text-center text-lg-start bg-light text-muted">
@@ -124,24 +146,24 @@
         <div class="row mt-3">
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <h6 class="text-uppercase fw-bold mb-4 jbmono">
-              <i class="fas fa-gem me-3"></i>Temp
+              <i class="fas fa-gem me-3"></i>Multimedia Assessment
             </h6>
             <p>
-              test template text to be replaced with whatever you need to put
-              here i guess
+              Not sure what to put here as the footer apart from a few links
+              that might be useful to you
             </p>
           </div>
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <h6 class="text-uppercase fw-bold mb-4 jbmono">Useful links</h6>
             <p>
-              <a href="index.html" class="text-reset">Home</a>
-                       </p>
+              <a href="index.html" class="text-reset">Home</a><br />
+            </p>
           </div>
 
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <h6 class="text-uppercase fw-bold mb-4 jbmono">Contact</h6>
             <p>
-              <i class="fa-solid fa-envelope me-3"></i>
+              <i class="fas fa-envelope me-3"></i>
               immanuel.lam@education.nsw.gov.au
             </p>
           </div>
